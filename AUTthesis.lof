@@ -1,0 +1,16 @@
+\hspace *{.5cm}شکل\hfill صفحه \par 
+\addvspace {10\p@ }
+\addvspace {10\p@ }
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {3-1}{\ignorespaces فلوچارت الگوریتم }}{10}{figure.caption.5}%
+\contentsline {figure}{\numberline {3-2}{\ignorespaces نمودار شماتیک فاصله توسعه}}{11}{figure.caption.6}%
+\contentsline {figure}{\numberline {3-3}{\ignorespaces نمودارهای شماتیک جستجوی دوطرفه}}{13}{figure.caption.7}%
+\contentsline {figure}{\numberline {3-4}{\ignorespaces استراتژی بهینه‌سازی هموارسازی برای گردش‌های متوالی قائم}}{15}{figure.caption.8}%
+\contentsline {figure}{\numberline {3-5}{\ignorespaces مراحل اجرای الگوریتم \lr {EBS-A*}}}{17}{figure.caption.9}%
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {4-1}{\ignorespaces نتایج شبیه‌سازی چهار الگوریتم روی یک نقشه ۵۰ در ۵۰.}}{19}{figure.caption.10}%
+\contentsline {figure}{\numberline {4-2}{\ignorespaces نتایج شبیه‌سازی چهار الگوریتم روی یک نقشه ۱۰۰ در ۱۰۰.}}{22}{figure.caption.13}%
+\contentsline {figure}{\numberline {4-3}{\ignorespaces نتایج شبیه‌سازی چهار الگوریتم روی یک نقشه ۱۵۰ در ۱۵۰.}}{24}{figure.caption.16}%
+\addvspace {10\p@ }
+\contentsfinish 
+\contentsfinish 

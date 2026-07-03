@@ -1,0 +1,82 @@
+%\hypertarget{ch1}
+\chapter{مقدمه} \label{yd}
+%\section{مقدمه}
+در رباتیک، یکی از مهم‌ترین چالش‌ها در مسیریابی ربات‌ها، برنامه‌ریزی مسیر است. هدف از این فرآیند این است که ربات‌ها بتوانند از نقطه شروع به هدف خود برسند بدون اینکه با موانع موجود در محیط برخورد کنند. الگوریتم‌های مختلفی برای حل این مشکل توسعه یافته‌اند که یکی از معروف‌ترین آن‌ها الگوریتم \lr{A* } است. الگوریتم\lr{A*}  به دلیل توانایی در یافتن مسیر بهینه در فضای جستجو، به‌طور گسترده‌ای مورد استفاده قرار می‌گیرد. اما با وجود مزایای فراوان، این الگوریتم با چالش‌هایی مواجه است، از جمله زمان محاسبه طولانی در محیط‌های پیچیده و احتمال مسیرهای ناپایدار در نزدیکی موانع. برای مقابله با این مشکلات، الگوریتم \lr{EBS-A*}  معرفی شده است که به‌طور خاص برای بهبود الگوریتم \lr{A*}  طراحی شده است. این الگوریتم از سه استراتژی کلیدی بهره می‌برد که به بهبود عملکرد و سرعت جستجو کمک می‌کند: فاصله گسترش، جستجوی دوطرفه و صاف‌سازی مسیر.
+
+- فاصله گسترش\LTRfootnote{\lr{Expansion distance} } باعث ایجاد ناحیه‌ای امن اطراف موانع می‌شود که از برخورد ربات با موانع جلوگیری می‌کند.
+
+- جستجوی دوطرفه\LTRfootnote{\lr{ Bidirectional Search Optimization } } به جستجو از هر دو سمت شروع و هدف به طور همزمان پرداخته و سرعت جستجو را افزایش می‌دهد.
+
+- صاف‌سازی مسیر\LTRfootnote{\lr{ Smoothing Optimization} } با حذف پیچ‌های تند، مسیر بهینه‌تری برای حرکت ربات فراهم می‌کند.
+
+این سه استراتژی باعث بهبود چشمگیر الگوریتم \lr{EBS-A*} در برنامه‌ریزی مسیر ربات‌ها شده و عملکرد آن را در محیط‌های پیچیده بهبود می‌بخشد.
+\section{ساختار کلی پایان‌نامه}
+
+در این بخش،\hyperref[structure]{ساختار کلی پروژه}
+ و ارتباط میان فصل‌ها و بخش‌های اصلی آن ارائه می‌شود. همان‌گونه که در شکل مشاهده می‌شود، این پایان‌نامه از چند بخش اصلی تشکیل شده است. ابتدا در فصل اول، مقدمه، بیان مسئله و اهداف پژوهش مطرح می‌شود. سپس در فصل دوم، مبانی نظری و پژوهش‌های مرتبط مورد بررسی قرار می‌گیرند. در فصل سوم، روش‌ها و الگوریتم‌های مورد استفاده، به‌ویژه الگوریتم \lr{A*} و نسخه‌های بهبود‌یافته‌ی آن، تشریح می‌شوند. در ادامه، فصل چهارم به شبیه‌سازی، ارزیابی و مقایسه‌ی نتایج اختصاص دارد و در نهایت، در فصل پنجم، جمع‌بندی نهایی و پیشنهادهایی برای پژوهش‌های آینده ارائه می‌شود.
+
+ساختار کلی ‌پروژه در شکل زیر نشان داده شده است.
+
+\begin{figure}[H]
+
+\begin{tikzpicture}[
+	node distance=2cm,
+	level distance=2.5cm,
+	sibling distance=3cm,
+	every node/.style={rectangle, draw, rounded corners, minimum width=2.5cm, minimum height=1.6cm,fill=blue!22 ,font=\small\sffamily},
+	edge from parent/.style={->, >=stealth, thick}
+	]
+	
+	\definecolor{bib}{RGB}{0,210,230}
+	\node[ellipse, draw, text centered, minimum width=3cm, minimum height=2.5cm,fill=blue!40] (thesis) {\hyperlink{project}{ \rl{پروژه}}};
+	
+
+	\node (chap1) [right =of thesis, yshift=-1.2cm,xshift=-0.5cm] {\hyperref[yd] {\rl{مقدمه}}};
+	\node (chap2) [below=of chap1] {\hyperref[ch2]   {\rl{مرور ادبیات}}};
+	\node (chap3) [below =of chap2,yshift=-2cm] {\hyperref[ch3]  {\rl{بهبود  \lr{A*}}}};
+	\node (chap4) [below =of chap3,yshift=-1cm] {\hyperref[ch4]{\rl{شبیه‌سازی }}};
+	\node (chap5) [below =of chap4] {\hyperref[ch5]{ \rl{نتیجه‌گیری}}};
+	\node (bib) [sharp corners, fill=bib!30,minimum height=1.5cm,right =of chap2, xshift=2.5cm] {\hyperref[ref]{\rl{کتاب‌نامه}}};
+	
+	\node (astar) [minimum height=1.1cm,fill=blue!11,right =of chap3, yshift=3cm, xshift=-1cm] {\hyperref[algor]{ \rl{الگوریتم \lr{A*}}}};
+	\node (31) [minimum height=1.1cm,fill=blue!11,right =of chap3, yshift=1.2cm,  xshift=-1cm] {\hyperref[31]{\rl{فاصله توسعه}}};
+	\node (32) [minimum height=1.1cm,fill=blue!11,right =of chap3,yshift=0cm,  xshift=-1cm] {\hyperref[32]{ \rl{دو طرفه}}};
+	\node (33) [minimum height=1.1cm,fill=blue!11,right =of chap3, yshift=-1.2cm, xshift=-1cm] {\hyperref[33]{\rl{نرم‌سازی}}};
+	
+	\node (ebs) [minimum height=1.1cm,fill=blue!11,right =of 32,yshift=0cm,  xshift=-1cm] {\hyperref[34]{ \rl{الگوریتم \lr{EBS-A*}}}};
+	
+	\node (al) [ minimum height=0.8cm,fill=blue!6,right =of ebs,yshift=0.5cm,  xshift=-1cm] {\hyperref[341]{ \rl{نحوه‌ی عملکرد}}};
+	\node (time) [ minimum height=0.8cm,fill=blue!6,right =of ebs,yshift=-0.5cm,  xshift=-1cm] {\hyperref[342]{\rl{زمان اجرا}}};
+	
+	\node (50) [sharp corners,dashed,fill=none, minimum height=0.8cm,right =of chap4,yshift=0.9cm,  xshift=-1cm] {\rl{۵۰×۵۰}};	
+	\node (100) [sharp corners,dashed,fill=none, minimum height=0.8cm,right =of chap4,  xshift=-1cm] {\rl{۱۰۰×۱۰۰}};	
+	\node (150) [sharp corners,dashed,fill=none, minimum height=0.8cm,right =of chap4,yshift=-0.9cm,  xshift=-1cm] {\rl{۱۵۰×۱۵۰}};	
+	
+	
+	\draw[->] (thesis) |- (chap1);  
+	\draw[->] (thesis) |- (chap2);
+	\draw[->] (thesis) |- (chap3);	
+	\draw[->] (thesis) |- (chap4);
+	\draw[->] (thesis) |- (chap5);    
+	
+	\draw[->] (chap3) |- (astar);    
+	\draw[->] (chap3) -- (31);
+	\draw[->] (chap3) -- (32); 
+	\draw[->] (chap3) -- (33);        
+	
+	\draw[->] (31) --(ebs);  
+	\draw[->] (32) --(ebs);
+	\draw[->] (33) --(ebs);      
+	
+	\draw[->] (ebs) --(al);   
+	\draw[->] (ebs) --(time);  
+	
+	\draw[->,dashed] (chap2) --(bib);
+	
+	\draw[->] (chap4) --(50);
+	\draw[->] (chap4) --(100);
+	\draw[->] (chap4) --(150);
+	
+\end{tikzpicture}
+\label{structure}
+\end{figure}

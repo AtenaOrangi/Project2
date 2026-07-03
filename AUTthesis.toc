@@ -1,0 +1,21 @@
+\tocheading 
+\edef \SavedTocDepth {\the \value {tocdepth}}
+\setcounter {tocdepth}{-10}
+\contentsline {chapter}{فهرست تصاویر}{ج}{section*.2}%
+\contentsline {chapter}{فهرست جداول}{د}{section*.3}%
+\setcounter {tocdepth}{\SavedTocDepth }
+\contentsline {chapter}{\numberline {1}مقدمه}{1}{chapter.1}%
+\contentsline {section}{\numberline {1-1}ساختار کلی پایان‌نامه}{2}{section.1.1}%
+\contentsline {chapter}{\numberline {2}مرور ادبیات‌}{4}{chapter.2}%
+\contentsline {chapter}{\numberline {3}بهبود الگوریتم \lr {A*}}{7}{chapter.3}%
+\contentsline {section}{\numberline {3-1} نظریه پایه الگوریتم سنتی \lr {A*}}{8}{section.3.1}%
+\contentsline {section}{\numberline {3-2}روش فاصله‌ی توسعه}{11}{section.3.2}%
+\contentsline {section}{\numberline {3-3}روش بهینه‌سازی جستجوی دوطرفه}{12}{section.3.3}%
+\contentsline {section}{\numberline {3-4}روش بهینه‌سازی هموارسازی مسیر}{13}{section.3.4}%
+\contentsline {section}{\numberline {3-5}الگوریتم \lr {EBS-A*}}{16}{section.3.5}%
+\contentsline {subsection}{\numberline {3-5-1}روند اجرای الگوریتم}{16}{subsection.3.5.1}%
+\contentsline {subsection}{\numberline {3-5-2}تحلیل پیچیدگی زمانی الگوریتم \lr {EBS-A*}}{17}{subsection.3.5.2}%
+\contentsline {chapter}{\numberline {4}شبیه‌سازی الگوریتم‌ها}{18}{chapter.4}%
+\contentsline {chapter}{\numberline {5}نتیجه‌گیری}{26}{chapter.5}%
+\contentsline {chapter}{کتاب‌نامه}{28}{chapter*.20}%
+\contentsfinish 
